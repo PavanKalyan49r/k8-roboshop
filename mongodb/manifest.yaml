@@ -5,20 +5,20 @@ metadata:
   namespace: roboshop
   labels: #this labels are deployment labels
     app: mongodb
-    projrct: roboshop
+    project: roboshop
     tier: db
   spec:
   replicas: 1
   selector:
     matchLabels: #this labels are used to find the pods
       app: mongodb
-      projrct: roboshop
+      project: roboshop
       tier: db
   template:
     metadata:
       labels: # these labels are pod labels
         app: mongodb
-        projrct: roboshop
+        project: roboshop
         tier: db
     spec:
       containers:
@@ -34,7 +34,7 @@ metadata:
 spec:
   selector:
     app: mongodb
-    projrct: roboshop
+    project: roboshop
     tier: db
   ports:
   - protocol: TCP
