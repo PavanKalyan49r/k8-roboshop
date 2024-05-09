@@ -37,7 +37,7 @@ metadata:
   name: web
   namespace: roboshop
 spec:
-  type: LoalBalancer
+  type: LoadBalancer
   selector:
     app: web
     project: roboshop
